@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+    <style>
+    
+      footer {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+
+      .column {
+        width: 27%;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="#">تواصل معنا</a>
+        </li>
+        <li>
+          <a href="#services">خدماتنا</a>
+        </li>
+        <li>
+          <a href="#about">من نحن</a>
+        </li>
+        <li>
+          <a href="#">الرئيسية</a>
+        </li>
+      </ul>
+      <img src="./imgs/logo.png" class="logo" />
+    </div>
+
+    <!-- الرئسية-->
+
+    <div
+      class="home bg-image-zoom"
+      style="background-image: url('/imgs/banner.jpg')"
+    >
+      <div class="title-container">
+        <h1>Flowers For Events</h1>
+        <hr />
+        <p>Fresh, Seasonal, Beautiful</p>
+      </div>
+    </div>
+
+    <!-- من نحن؟ -->
+
+    <div class="about" id="about">
+      <!-- top -->
+      <div class="about-top">
+        <span class="shape">
+          <img src="./imgs/Frame+5.png" />
+          <p>هدايا</p>
+        </span>
+
+        <span class="shape">
+          <img src="./imgs/Frame+4.png" />
+          <p>افراح</p>
+        </span>
+
+        <span class="shape">
+          <img src="./imgs/Frame+3.png" />
+          <p>تنسيقات الزهور</p>
+        </span>
+      </div>
+      <hr class="hr" />
+      <!-- bottom -->
+      <div class="about-bottom">
+        <h1 class="heading">من نحن؟</h1>
+        <span><hr class="y-hr" /></span>
+        <p>
+          في Yellow line في نؤمن بأن التمييز في التصميم والتنفيذ الناجح والجودة
+          والبحث هي أمور أساسية في نهجنا، وأن كل مشروع يمثل فرصة فريدة لتقييم
+          رؤية العميل والارتقاء بها إلى ما هو أبعد من توقعاته. ونحن نسعى لتحقيق
+          ذلك من خلال العمل مع فريق مؤهل وعلى اتصال وثيق مع العملاء والاستشاريين
+          والموردين. نحن نعمل بحماس وشغف
+        </p>
+      </div>
+    </div>
+
+    <!-- خدماتنا -->
+
+    <div class="services bg-video" id="services">
+      <video autoplay muted loop class="bg-video-content">
+        <source src="/imgs/services.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="serv">
+        <span>
+          <h1 class="heading">خدماتنا</h1>
+          <hr class="y-hr"
+        /></span>
+        <div class="services-cont">
+          <span class="shape">
+            <img src="./imgs/serve4.jpg" />
+            <p>خدمة 4</p>
+          </span>
+
+          <span class="shape">
+            <img src="./imgs/serve2.jpg" />
+            <p>خدمة 3</p>
+          </span>
+
+          <span class="shape">
+            <img src="./imgs/serve6.jpg" />
+            <p>خدمة 2</p>
+          </span>
+          <span class="shape">
+            <img src="./imgs/serve5.jpg" />
+            <p>خدمة 1</p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="column">
+        <p style="color: gold;">للاستفسار</p>
+        <ul>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Privacy Policy</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+  
+
+      <div class="column">
+        <p style="color: gold;">ابقي علي تواصل</p>
+        <ul>
+          <i class="fa fa-camera-retro fa-lg"></i> fa-lg
+
+          <li> 500 Terry Francine St. San Francisco, CA 94158</li>
+          <li>123-456-7890</li>
+          <li>info@gmail.com</li>
+          <li>Subjective Questions</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
