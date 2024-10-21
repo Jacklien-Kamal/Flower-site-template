@@ -49,26 +49,19 @@
   <body>
     <!-- Navbar -->
     <div class="navbar">
-      <ul>
-        <li>
-          <a href="#">تواصل معنا</a>
-        </li>
-        <li>
-          <a href="#services">خدماتنا</a>
-        </li>
-        <li>
-          <a href="#about">من نحن</a>
-        </li>
-        <li>
-          <a href="#">الرئيسية</a>
-        </li>
-      </ul>
+      <ul class="list-none flex items-center py-2">
+        <li><a href="#home" class="nav-link " data-page="home">الرئيسية</a></li>
+        <li><a href="#about-us" class="nav-link" data-page="about">من نحن</a></li>
+        <li><a href="#services" class="nav-link" data-page="services">خدماتنا</a></li>
+        <li><a href="" class="nav-link" data-page="contact">تواصل معنا</a></li>
+    </ul>
       <img src="./imgs/logo.png" class="logo" />
     </div>
 
     <!-- الرئسية-->
 
     <div
+    id="home"
       class="home bg-image-zoom"
       style="background-image: url('/imgs/banner.jpg')"
     >
@@ -81,7 +74,7 @@
 
     <!-- من نحن؟ -->
 
-    <div class="about" id="about">
+    <div class="about" id="about-us">
       <!-- top -->
       <div class="about-top">
         <span class="shape">
