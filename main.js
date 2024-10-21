@@ -1,5 +1,3 @@
-// script.js
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.nav-link');
 
@@ -12,11 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
         activeLink.classList.add('active', 'underline-animation');
     }
 
-    // Event listener for link clicks
+    // Combined Event listener for link clicks (set active and smooth scroll)
     links.forEach(link => {
         link.addEventListener('click', (e) => {
-            
             e.preventDefault(); // Prevent default link behavior
+
+            const targetId = link.getAttribute('href'); // Get the target ID
+            const targetElement = document.querySelector(targetId); // Find the target element
+
+            // Smooth scroll if the target element exists
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            // Set the clicked link as active
             setActiveLink(link);
         });
     });
@@ -25,20 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialActiveLink = links[0]; // Set the first link as active by default
     setActiveLink(initialActiveLink);
 });
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        const targetId = this.getAttribute('href'); // Get the target ID
-        const targetElement = document.querySelector(targetId); // Find the target element
 
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
-        }
-    });
-});
-
+// Toggle Menu (ensure the element exists in HTML)
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('nav-active');
-  }
-  
+    if (navLinks) {
+        navLinks.classList.toggle('nav-active');
+    }
+}
