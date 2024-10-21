@@ -129,6 +129,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideIn 2s ease-in-out; /* Applying the animation */
+
 }
 
 .shape {
@@ -157,7 +159,7 @@
   background-color: #ffbf00;
   height: 3px;
   transition: width 4s ease; /* Smooth zoom effect */
-  animation: in-out 5s ease infinite;
+  animation: in-out 10s ease infinite;
 }
 
 @keyframes in-out {
@@ -214,6 +216,7 @@
   line-height: 2.1;
   text-shadow: 3px 3px 5px rgba(3, 3, 3, 0.911);
   animation: slideIn 2s ease-in-out; /* Applying the animation */
+  animation-delay: 1.2s ;
 }
 
 .services {

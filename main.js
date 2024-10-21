@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listener for link clicks
     links.forEach(link => {
         link.addEventListener('click', (e) => {
+            
             e.preventDefault(); // Prevent default link behavior
             setActiveLink(link);
         });
